@@ -116,6 +116,12 @@ img {
   height: auto;
 }
 
+.img-responsive.test {
+  width:300px !important;
+  border-radius: 5px;
+}
+
+
 span, a, a:hover {
   display: inline-block;
   text-decoration: none;
@@ -839,7 +845,7 @@ span, a, a:hover {
   position: relative;
 }
 .testimonials .citem h5:after {
-  content: "|";
+  /* content: "|"; */
   position: absolute;
   right: -5px;
   bottom: 4px;
