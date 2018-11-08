@@ -203,6 +203,14 @@ span, a, a:hover {
   padding: 100px 0;
 }
 
+@media (max-width:767px) {
+  .section-padding {
+    padding: 50px 0;
+  }
+
+
+}
+
 .section-ptb {
   padding: 80px 0;
 }
