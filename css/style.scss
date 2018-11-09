@@ -27,7 +27,7 @@
 		12 Contact
 		13 Footer
 		14 Responsive
-	
+
 
 ---------------------------------------------------------------- */
 
@@ -74,7 +74,7 @@ body {
 		}
 
 		.navbar-nav{
-			
+
 			.nav-link{
 				color: #eee;
 			}
@@ -490,7 +490,7 @@ span, a, a:hover {
 	}
 
 	.navbar-nav{
-		
+
 		.nav-link{
 			font-size: 13px;
 			font-weight: 600;
@@ -522,7 +522,7 @@ span, a, a:hover {
 	}
 
 	.navbar-nav{
-		
+
 		.nav-link{
 			color: #222;
 		}
@@ -646,7 +646,7 @@ span, a, a:hover {
 			transition: all .5s;
 		}
 	}
-	
+
 	.content{
 
 		p{
@@ -859,7 +859,7 @@ span, a, a:hover {
 
 .portfolio{
 	overflow: hidden;
-	
+
 	.filtering{
 
 		span{
@@ -1239,8 +1239,10 @@ span, a, a:hover {
 
 }
 
-
-
-
-
-
+.testimonials .citem h5 {
+    font-size: 16px;
+    display: inline-block;
+     padding-right: 0px !important;
+     margin-right: 0px !important; 
+    position: relative;
+}

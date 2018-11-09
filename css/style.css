@@ -1092,4 +1092,12 @@ span, a, a:hover {
   }
 }
 
+
+.testimonials .citem h5 {
+    font-size: 16px;
+    display: inline-block;
+     padding-right: 0px !important;
+     margin-right: 0px !important;
+    position: relative;
+}
 /*# sourceMappingURL=style.css.map */
