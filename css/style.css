@@ -168,6 +168,14 @@ span, a, a:hover {
   margin-top:0px;
 }
 
+@media (max-width:767px) {
+  .section-head3 {
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top:0px;
+  }
+}
+
 .title {
   display: inline-block;
   font-size: 36px;
