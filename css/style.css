@@ -140,6 +140,13 @@ span, a, a:hover {
   color: inherit;
 }
 
+@media (max-width:767px) {
+  margin-bottom:30px;
+}
+
+
+
+
 .section-head {
   text-align: center;
   margin-bottom: 80px;
