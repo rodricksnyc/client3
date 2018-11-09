@@ -1,37 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
-	Theme Name: Personala
-	Theme URI: http://
-	Description: The Multi-Purpose Onepage Template
-	Author: his7am
-	Author URI: http://themeforest.net/user/his7am
-	Version: 1.0
-
------------------------------------------------------------------------------------*/
-/* ----------------------------------------------------------------
-
-	== Table Of Content
-
-		01 Basic
-		02 Buttons
-		03 Navbar
-		04 Header
-		05 Hero
-		06 Resume
-		07 Services
-		08 Numbers
-		09 Portfolio
-		10 Testimonials
-		11 Blog
-		12 Contact
-		13 Footer
-		14 Responsive
-
-
----------------------------------------------------------------- */
-/* ----------------------------------------------------------------
-				01 Basic
------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -141,11 +108,21 @@ span, a, a:hover {
 }
 
 @media (max-width:767px) {
-  margin-bottom:30px;
+  .mb-30 {
+    margin-bottom:30px;
+  }
 }
 
+.img-responsive.body {
+  background:#000;
+  opacity:.6;
+}
 
-
+.moveUp {
+  position: relative;
+  margin-top:-200px;
+  z-index: 1;
+}
 
 .section-head {
   text-align: center;
