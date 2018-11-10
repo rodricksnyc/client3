@@ -70,6 +70,13 @@ h1, h2, h3, h4, h5, h6, .logo {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+
+textarea, #form_name, #form_message, #form_email, #form_subject {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
 @media (max-width:676px) {
 .order {
 display:flex;
