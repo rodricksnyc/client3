@@ -390,47 +390,50 @@
 
 
 
- <form class="form full-width" action="https://formspree.io/inspirebyskg@aol.com" method="POST" name='contact-form' id='contact-form'>
+            <form class="form full-width" id="contact-form" method="post" action="contact.php">
                         <div class="messages"></div>
 
                         <div class="controls">
 
                             <div class="row">
-                                <div class="col-md-6 col-xs-12">
-                                  <input id="form_name" class='form-control' id='field1' name='name' placeholder='Name' required='required' type='text'>
-
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" placeholder="Name *" required="required">
+                                    </div>
                                 </div>
 
-                                 <div class="col-md-6 col-xs-12">
-
-                                        <input id="form_email" name='_replyto' placeholder='Email' required='' type='Email' required="required" type='text'>
-
+                                 <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_email" type="email" name="email" placeholder="Email *" required="required">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12 col-xs-12">
-
+                                <div class="col-md-12">
+                                    <div class="form-group">
                                         <input id="form_subject" type="text" name="subject" placeholder="Subject">
-
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12 col-xs-12">
-
+                                <div class="col-md-12">
+                                    <div class="form-group">
                                         <textarea id="form_message" name="message" placeholder="Your Message *" rows="4" required="required"></textarea>
-
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
-                            	<div class="col-md-12">
-
-                                    <input style="background:#C49B66;opacity:.9;color:#fff;" class='btn' type='submit' value='send'>
-
+                              <div class="col-md-12">
+                                    <div class="form-group">
+                                        <span class="buton buton-lg">
+                                        <button type="submit" front="Send Message" back="&#xf35d;"></button>
+                    </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </form>
-
+                    
                     <div class="info full-width">
                     	<div class="row">
                     		<div class="col-md-4">
