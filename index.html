@@ -2,10 +2,8 @@
  <html>
 
     <head>
-
-
-        <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta charset="utf-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 
@@ -24,6 +22,24 @@
         <link rel="stylesheet" href="css/style.css" />
 
     </head>
+<style>
+/* .fade-in {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.fade-out {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+} */
+
+
+.slidd { position: fixed; width: 100%; padding: 0px; margin: 0px; border: 0px; }
+</style>
+
+
 
     <body class="dark-theme">
 
@@ -40,7 +56,7 @@
 
     	<!-- =====================================
     	==== Start Navbar -->
-		<nav class="navbar navbar-expand-lg">
+		<nav class="navbar navbar-expand-lg slidd">
 			<div class="container">
 
 			  <!-- Logo -->
@@ -683,7 +699,24 @@ $(document).ready(function() {
       });
 });
 
-
+if ( $(window).width() > 769) {
+var mywindow = $(window);
+var mypos = mywindow.scrollTop();
+var up = false;
+var newscroll;
+mywindow.scroll(function () {
+    newscroll = mywindow.scrollTop();
+    if (newscroll > mypos && !up) {
+        $('.slidd').stop().fadeOut(730);
+        up = !up;
+        console.log(up);
+    } else if(newscroll < mypos && up) {
+        $('.slidd').stop().fadeIn(300);
+        up = !up;
+    }
+    mypos = newscroll;
+});
+}
 
 
 
