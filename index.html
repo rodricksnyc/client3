@@ -23,20 +23,7 @@
 
     </head>
 <style>
-/* .fade-in {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
-}
 
-.fade-out {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 1s, opacity 1s linear;
-} */
-
-
-.slidd { position: fixed; width: 100%; padding: 0px; margin: 0px; border: 0px; }
 </style>
 
 
@@ -56,7 +43,7 @@
 
     	<!-- =====================================
     	==== Start Navbar -->
-		<nav class="navbar navbar-expand-lg slidd">
+		<nav class="navbar navbar-expand-lg">
 			<div class="container">
 
 			  <!-- Logo -->
@@ -699,26 +686,28 @@ $(document).ready(function() {
       });
 });
 
-if ( $(window).width() > 769) {
-var mywindow = $(window);
-var mypos = mywindow.scrollTop();
-var up = false;
-var newscroll;
-mywindow.scroll(function () {
-    newscroll = mywindow.scrollTop();
-    if (newscroll > mypos && !up) {
-        $('.slidd').stop().fadeOut(730);
-        up = !up;
-        console.log(up);
-    } else if(newscroll < mypos && up) {
-        $('.slidd').stop().fadeIn(300);
-        up = !up;
-    }
-    mypos = newscroll;
+(function ($) {
+  $(document).ready(function(){
+
+	// hide .navbar first
+
+
+	// fade in .navbar
+	$(function () {
+		$(window).scroll(function () {
+            // set distance user needs to scroll before we fadeIn navbar
+			if ($(this).scrollTop() > 100) {
+				$('.navbar').fadeOut();
+			} else {
+				$('.navbar').fadeIn();
+			}
+		});
+
+
+	});
+
 });
-}
-
-
+  }(jQuery));
 
 </script>
 
