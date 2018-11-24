@@ -604,6 +604,10 @@
         <center><img class="img-responsive logo" src="img/favicon.jpg">
     		<p>Copyright &copy; Inspire by SKG</p>
         <p class="goldHover"><strong><a href="http://www.elizabethrodricks.com/" target="_blank">Web Designer</a></strong></p>
+<br>
+<div class="scrollTop">
+	<center><p id="credits" class="address"<a class="scroll" href=""><i class="fas fa-arrow-up"></i> Back to Top</a></p></center>
+</div>
       </center>
 
     	</footer>
@@ -708,6 +712,15 @@ $(document).ready(function() {
 
 });
   }(jQuery));
+
+  var scrollTop = $(".scrollTop");
+var scrollSpeed = 1000;
+$(scrollTop).click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, scrollSpeed);
+
+});
 
 </script>
 
